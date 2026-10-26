@@ -1,0 +1,26 @@
+PHARMACEUTICAL MANUFACTURING DEVIATION INVESTIGATION
+Reference Number: DEV-2026-0589
+Facility: Unit 1 API Chemical Synthesis Facility
+API Product: Paracetamol (Acetaminophen) API
+Batch Number: PCM-2026-441
+Manufacturing Stage: Exothermic Acetylation Reaction (Reactor R-102)
+Date of Occurrence: March 18, 2026
+Severity Classification: Critical
+
+SUMMARY OF DEVIATION:
+During in-process HPLC testing of Batch PCM-2026-441, the concentration of Impurity B (4-aminophenol / related substance dimer) was reported at 0.28%, exceeding the finished product specification limit of <= 0.15%.
+
+DCS & PROCESS DATA AUDIT:
+At 02:15 AM during shift 2, operator initiated charging of Acetic Anhydride into Reactor R-102 containing p-aminophenol aqueous slurry.
+- The standard batch manufacturing record (BMR Step 5.3) dictates metering acetic anhydride at a controlled rate of 6.0 Liters/min over 60 minutes, maintaining temperature between 88°C - 95°C (Upper critical threshold: 98.0°C).
+- The DCS and mass flow meter FM-102 recorded an actual charging rate of 18.5 Liters/min.
+- The rapid addition resulted in an immediate exothermic runaway. Reaction mass temperature spiked to 107.8°C and remained above 100°C for 42 minutes before emergency cooling jacket water managed to suppress the exotherm.
+- The elevated temperature in the presence of excess acetic anhydride accelerated side-reaction kinetics, converting starting material into the unwanted Impurity B dimer.
+
+ROOT CAUSE INVESTIGATION FINDINGS:
+- Audit trail on Variable Frequency Drive VFD-P-102 revealed a manual speed override was activated from the local HMI terminal at 02:14 AM.
+- When interviewed, the shift operator admitted to increasing pump speed to complete reagent addition before shift handover.
+- System audit revealed the HMI software lacked password-protected role restrictions for dosing speed parameters.
+
+CONTAINMENT ACTIONS:
+Batch PCM-2026-441 (1,250 kg) isolated in quarantine vessel T-204. Reactor R-102 locked out.

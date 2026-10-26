@@ -1,0 +1,25 @@
+From: priya.sharma@pharma-apisynthesis.com
+To: quality.investigations@pharma-apisynthesis.com
+Date: March 22, 2026 09:14 AM
+Subject: URGENT: Quality Incident - Residual Solvent Excursion in Metformin API Batch MET-2026-102
+
+Hi Quality Team,
+
+We have an urgent deviation to report for Metformin HCl API Batch MET-2026-102 (Stage: Vacuum Tray Drying, Dryer VTD-04).
+
+Analytical QC has reported that Batch MET-2026-102 failed residual solvent testing by GC-Headspace:
+- Residual Acetone Result: 5,820 ppm (ICH Q3C Class 3 Limit: <= 5,000 ppm)
+- Water Content (KF): 0.22% (Within spec <= 0.5%)
+
+Investigation details:
+1. Dryer VTD-04 ran for the standard 18-hour cycle at 70°C shelf temperature.
+2. Review of the vacuum recorder chart indicates that vacuum levels were normal (15-20 mbar) for the first 12 hours. However, between 12h and 18h, the vacuum degraded significantly, rising to 120-140 mbar.
+3. Because vacuum was compromised, the vapor pressure of acetone was insufficient to desorb from the crystalline matrix.
+4. Maintenance inspected the liquid ring vacuum pump P-401 and discovered that the seal water cooling heat exchanger HE-401 was heavily fouled with mineral scale, causing the seal water temperature to rise to 48°C (normally 18°C), causing pump cavitation and loss of deep vacuum.
+5. Secondary cooling water log books revealed that chemical descaling had not been performed for 8 months.
+
+The 850 kg API lot is currently held under physical quarantine in Cleanroom Suite 4. Please initiate formal RCA and CAPA workflow.
+
+Regards,
+Priya Sharma
+Production Superintendent, Unit 2
